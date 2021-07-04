@@ -11,8 +11,6 @@
 
 // }
 
-
-
 let darkMode =localStorage.getItem('darkMode');
 
 const icon =document.querySelector('#icon');
