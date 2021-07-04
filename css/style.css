@@ -131,7 +131,7 @@ p {
 }
 
 .main-btn:hover {
-  background-color: transparent;
+  background-color: var(--secondry-color);
   color: var(--white-color);
 }
 
@@ -174,6 +174,15 @@ p {
   margin: auto;
 }
 
+.effect {
+  -webkit-transition: .51s ease-in-out;
+  transition: .51s ease-in-out;
+}
+
+.effect:hover {
+  font-size: 1.2rem;
+}
+
 .navigation-wrap {
   position: fixed;
   width: 100%;
@@ -207,6 +216,14 @@ p {
   text-transform: capitalize;
   color: var(--white-color);
   letter-spacing: 1px;
+  z-index: 1;
+}
+
+.nav-item-hover:hover {
+  background: #ebebeb;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
 
 .navigation-wrap .main-btn {
@@ -275,6 +292,7 @@ p {
 }
 
 .info-banner {
+  overflow: hidden;
   background-color: var(--gray);
   padding: 40px;
   position: relative;
@@ -300,6 +318,18 @@ p {
 
 .ideal p {
   color: var(--text-gray);
+}
+
+.border-contant {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 5px solid;
+  border-image-source: linear-gradient(100deg, var(--secondry-color), var(--primary-color) 45%);
+  border-image-slice: 1;
+}
+
+.card-section {
+  padding-top: 12rem;
 }
 
 /* Desktop Wide: */
@@ -339,5 +369,46 @@ p {
   .video-section {
     display: none;
   }
+}
+
+.smcard {
+  display: -ms-grid;
+  display: grid;
+  border: none;
+  outline: unset;
+  background-color: var(--gray);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  width: 90%;
+  height: 350px;
+}
+
+.smcard:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.card-body {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: var(--gray) !important;
+  padding: 25px !important;
+  height: 200px;
+}
+
+.button {
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #BE006B;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 /*# sourceMappingURL=style.css.map */
