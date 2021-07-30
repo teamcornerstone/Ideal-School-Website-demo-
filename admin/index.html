@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Admin Panel| Dashboard</title>
+</head>
+<body>
+
+    <header id="header" class="header">
+        <nav class="nav">
+            <ul  class="menu-nav">
+                <div class="menu-nav__left">
+                    <div class="menu-nav__left-btn" id="menu-nav__sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="menu-nav__left-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="search..">
+                    </div>
+                </div>
+                <div class="menu-nav__right">
+                    <li class="menu-nav__right-item">
+                        <div class="user">
+                            <p class="user-name">John Rock <i class="fas fa-caret-right"></i></p>
+                        <span>Admin</span>
+                        </div>
+                    </li>
+                    <li class="menu-nav__right-item">
+                        <img src="./img/profile.png" class="user-profile-image" alt="user profile" srcset="">
+                    </li>
+                    <li class="menu-nav__right-item"><span class="menu-badge badge-red">3</span><i class="fas fa-envelope"></i></li>
+                    <li class="menu-nav__right-item"><span class="menu-badge badge-green">4</span><i class="fas fa-bell"></i></li>
+                    <li class="menu-nav__right-item"><i class="fas fa-cog"></i></li>
+                    <li class="menu-nav__right-item"><i class="fas fa-moon"></i></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar__brand">
+            <img src="./img/logo.png" alt="">
+            <h1 class="sidebar__brand-title">ISC</h1>
+            <div class="sidebar__brand-menu__btn">
+                <span class="sidebar__brand-menu__btn-burger"></span>
+            </div>
+        </div>
+        <div>
+            <ul class="sidebar__lists">
+                <li class="sidebar__lists-item">
+                     <a href="#"> <i class="fas fa-tachometer-alt"></i> Dashboard </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+                <li class="sidebar__lists-item">
+                     <a href="#"> <i class="fas fa-user-graduate"></i> Students </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i> 
+                </li>
+                <li class="sidebar__lists-item">
+                     <a href="#"> <i class="fas fa-chalkboard-teacher"></i> Teachers </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+                <li class="sidebar__lists-item">
+                    <a href="#"><i class="fas fa-money-check-alt"></i> Earnings </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+                <li class="sidebar__lists-item">
+                    <a href="#"> <i class="fas fa-school"></i>  Class </a>  <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+                <li class="sidebar__lists-item">
+                    <a href="#"><i class="fas fa-sticky-note"></i> Exams  </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+                <li class="sidebar__lists-item">
+                   <a href="#"> <i class="fas fa-exclamation-circle"></i> Notice </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+                <li class="sidebar__lists-item">
+                   <a href="#"> <i class="fas fa-sign-out-alt"></i> Sign Out </a> <i class="fas fa-chevron-right sidebar-arrow-right"></i>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class=".main">
+        <div class="heading">
+            <h1 class="heading__page-heading">Admin Dashboard</h1>
+            <p class="heading__page-location">Home <span><i class="fas fa-chevron-right sidebar-arrow-right"></i> Admin</span></p>
+        </div>
+        <div class="info-cards">
+            <div class="info-card">
+                <i class="fas fa-user-graduate"></i> 
+                <div class="card__info">
+                    <p>Students</p>
+                    <span>1500</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-user-graduate"></i> 
+                <div class="card__info">
+                    <p>Students</p>
+                    <span>1500</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-user-graduate"></i> 
+                <div class="card__info">
+                    <p>Students</p>
+                    <span>1500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart_cards">
+            <div class="chart_card flex-2">
+                <div class="chart_card__title">Earnings</div>
+                <canvas id="bar_chart"></canvas>
+            </div>
+            <div class="chart_card flex-1">
+                <div class="chart_card__title">Students</div>
+                <canvas id="doughnut_chart"></canvas>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./package/dist/chart.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
